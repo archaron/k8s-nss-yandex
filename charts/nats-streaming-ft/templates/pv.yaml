@@ -12,7 +12,10 @@ spec:
   - ReadWriteMany
   capacity:
     storage: {{ .Values.pv.storageSize }}
-  nfs:
-    path: /
-    server: {{ .Values.pv.serverUrl }}
+  csi:
+    driver: disk-csi-driver.mks.ycloud.io
+    volumeHandle: {{ template "name" . }}
+    readOnly: false
+    fsType: ext4
   persistentVolumeReclaimPolicy: {{ .Values.pv.reclaimPolicy }}
+  storageClassName: yc-network-hdd

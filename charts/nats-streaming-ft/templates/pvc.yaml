@@ -9,7 +9,7 @@ metadata:
 spec:
   accessModes:
   - ReadWriteMany
-  storageClassName: ""
+  storageClassName: yc-network-hdd
   resources:
     requests:
       storage: {{ .Values.storageSize }}

@@ -8,6 +8,6 @@ storageSize: 1Gi
 volumeSubPath: nats-streaming
 
 pv:
-  serverUrl: 'FAKED'
+#  serverUrl: 'FAKED'
   reclaimPolicy: Retain
   storageSize: 2Gi
