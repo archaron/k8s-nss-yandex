@@ -9,7 +9,7 @@ metadata:
   name: {{ template "name" . }}
 spec:
   accessModes:
-  - ReadWriteMany
+  - ReadWriteOnce
   capacity:
     storage: {{ .Values.pv.storageSize }}
   csi:

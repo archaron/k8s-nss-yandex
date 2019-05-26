@@ -1,7 +1,7 @@
 image: docker.io/canhnt/nats-streaming-server:v0.6.0
 imagePullPolicy: IfNotPresent
 
-replicas: 3
+replicas: 1
 
 storageSize: 1Gi
 # optional
