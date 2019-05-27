@@ -1,4 +1,4 @@
-image: docker.io/canhnt/nats-streaming-server:v0.6.0
+image: docker.io/archaron/nats-streaming-server:v0.14.2
 imagePullPolicy: IfNotPresent
 
 replicas: 1
